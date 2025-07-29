@@ -1,8 +1,12 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Replace these with your actual Supabase URL and API key
-const supabaseUrl = 'https://your-project-ref.supabase.co'
-const supabaseKey = 'your-anon-key'
+// Get Supabase configuration from environment variables
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error('Missing Supabase environment variables. Please check your .env file.')
+}
 
 export const supabase = createClient(supabaseUrl, supabaseKey)
 
