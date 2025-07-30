@@ -2,7 +2,7 @@
 
 Submitted by: **Thy Tran**
 
-This web app: **insert description**
+This web app: **Crewmate Manager is an application that allows users to create, view, edit, and manage a team of custom crewmates. Each crewmate can be given a unique name, speed, and color. The app features a gallery to display all created crewmates, detailed info pages for each crewmate, and intuitive forms for updating or deleting crewmates. Let check it out!**
 
 Time spent: **7** hours spent in total
 
@@ -41,10 +41,6 @@ The following **optional** features are implemented:
   - e.g., a pirate crew’s predicted success at commandeering a new galley
 
 
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
@@ -62,9 +58,13 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
+1. Setting up Supabase and connecting it to the React frontend required careful configuration, especially for authentication and CRUD operations.
+2. Managing the state of crewmates across different components (create, edit, gallery, detail) was challenging.
+3. Implementing unique detail pages for each crewmate and managing React Router paths for smooth navigation.
+
 ## License
 
-    Copyright [2025] [name of copyright owner]
+    Copyright [2025] [Thy Tran made with ❤️]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
